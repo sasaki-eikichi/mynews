@@ -21,10 +21,10 @@ Route::get('/', function () {
         Route::get('news/create', 'Admin\NewsController@add');
         Route::post('news/create', 'Admin\NewsController@create');
         Route::get('news','Admin\NewsController@index');
-        Route::get('profile/edit', 'Admin\ProfileController@edit');
         Route::get('profile/create','Admin\ProfileController@add');
         Route::post('profile/create','Admin\ProfileController@create');
         Route::get('profile','Admin\ProfileController@index');
+        Route::get('profile/edit', 'Admin\ProfileController@edit');
       });
 
 Auth::routes();
