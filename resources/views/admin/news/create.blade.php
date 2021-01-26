@@ -18,6 +18,7 @@
                                 <li>{{ $e }}</li>
                             @endforeach
                         </ul>
+                        
                     @endif
                     <div class="form-group row">
                         <label class="col-md-2" for="title">タイトル</label>
