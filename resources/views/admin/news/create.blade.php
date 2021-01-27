@@ -1,8 +1,9 @@
-{{-- layout/admin.blade.phpを読み込む --}}
+{{-- layouts/admin.blade.phpを読み込む --}}
 @extends('layouts.admin')
 
+
 {{-- admin.blade.phpの@yield('title')に'ニュースの新規作成'を埋め込む --}}
-@section('title','ニュースの新規作成')
+@section('title', 'ニュースの新規作成')
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
@@ -18,7 +19,6 @@
                                 <li>{{ $e }}</li>
                             @endforeach
                         </ul>
-                        
                     @endif
                     <div class="form-group row">
                         <label class="col-md-2" for="title">タイトル</label>
@@ -44,4 +44,4 @@
             </div>
         </div>
     </div>
-@endsection
+@endsection　
