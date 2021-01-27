@@ -33,15 +33,15 @@ class ProfileController extends Controller
     
     public function index(Request $request)
     {
-        $cond_title =$request->cond_title;
-        if ($cond_title !=''){
+        $cond_name =$request->cond_name;
+        if ($cond_name !=''){
             //検索されたら検索結果を所得する
-            $posts =Profile::where('title',$cond_title)->get();
+            $posts =Profile::where('name',$cond_name)->get();
         }else{
             //それ以外所得
             $posts = Profile::all();
         }
-        return view('admin.profile.index',['posts' => $posts, 'cond_title' => $cond_title]);
+        return view('admin.profile.index',['posts' => $posts, 'cond_name' => $cond_name]);
     }
 
 
